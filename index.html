@@ -5,11 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <script src="script.js" type="text/javascript"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div>It's a console game!</div>
-    <script>
-        playGame();
-    </script>
+    <div id="topRow">
+        <div class="choice" id="playerChoice">
+            <img src="rock.png" id="playerRock" style="height: 100%; display: none" >
+            <img src="paper.png" id="playerPaper" style="height: 100%; display: none" >
+            <img src="scissors.png" id="playerScissors" style="height: 100%; display: none" >
+        </div>
+        <div class="resultBoard">
+            <span id="winOrNot">Let's play!</span>
+            <span id="details">Rock, Paper, Scissors</span>
+            <span id="scores">0:0</span>
+        </div>
+        <div class="choice" id="computerChoice">
+            <img src="rock.png" id="computerRock" style="height: 100%; display: none" >
+            <img src="paper.png" id="computerPaper" style="height: 100%; display: none" >
+            <img src="scissors.png" id="computerScissors" style="height: 100%; display: none" >
+        </div>
+    </div>
+    <div id="bottomRow">
+        <div class="choose" id="rock">
+            <input type="image" src="rock.png" id="rockButton" onclick="buttonClick(0)">
+        </div>
+        <div class="choose" id="paper">
+            <input type="image" src="paper.png" id="paperButton" onclick="buttonClick(1)">
+        </div>
+        <div class="choose" id="scissors">
+            <input type="image" src="scissors.png" id="scissorsButton" onclick="buttonClick(2)">
+        </div>
+    </div>
 </body>
 </html>

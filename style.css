@@ -1,0 +1,102 @@
+body{
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    background: linear-gradient(-45deg, #061556, #450887, #0c227f, #590fa3);
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    animation: gradient 15s ease infinite;
+    overflow: hidden;
+}
+#topRow{
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    top: 10vh;
+    height: 270px;
+    border: 0px solid black;
+    min-width: 1056px;
+}
+.choice{
+    padding: 0px;
+    display: inline-block;
+    border: 0px solid black;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    
+}
+.resultBoard{
+    padding: 0px;
+    display: inline-block;
+    border: 0px solid black;
+    width: 32vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+    min-width: 348px;
+}
+#winOrNot{
+    display: block;
+    color:white;
+    font-size:50pt;
+}
+#details{
+    display:block;
+    color:white;
+    font-size: 30pt;
+}
+#scores{
+    padding-top: 25px;
+    display:block;
+    color:white;
+    font-size: 80pt;
+}
+#playerChoice{
+    text-align:right;
+    height:200px;
+    vertical-align: top;
+    margin-right: 25px;
+}
+#computerChoice{
+    text-align:left;
+    height: 200px;
+    vertical-align: top;
+    margin-left: 25px;
+}
+#bottomRow{
+    position: relative;
+    top:200px;
+    padding:0;
+    border: 0px solid black;
+    height: 20vh;
+    min-width: 1056px;
+}
+.choose{
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    height:100%;
+    width: 32%;
+}
+#rock{
+    text-align: right;
+}
+#paper{
+    text-align: center;
+}
+#scissors{
+    text-align: left;
+}
+input{
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    border:10px rgba(0, 0, 0, 1);
+    transition-duration: 0.3s;
+    outline: none;
+}
+input:hover{
+    transform: scale(1.2);
+}
